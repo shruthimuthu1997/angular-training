@@ -1,0 +1,109 @@
+<div class="card-header" style="align-items:center;"><b>PRODUCTS</b></div>
+
+<div class="card">
+  <div class="row " style="background-color: blueviolet ; padding:0px; margin-left: 0px">
+
+    <div class="col-4">
+      <app-stats [count]="10" [title]="'users'" [iconClass]="'fa fa-users'" [color]="'blue'" style="margin-left: 20px">
+      </app-stats>
+    </div>
+
+    <div class="col-4">
+      <app-stats [count]="20" [title]="'Orders'" [iconClass]="'fa fa-cart-plus'" [color]="'red'"
+        style="margin-left: 20px"></app-stats>
+    </div>
+
+    <div class="col-4">
+      <app-stats [count]="30" [title]="'Request'" [iconClass]="'fa fa-volume-control-phone'" [color]="'cyan'"
+        style="margin-left: 20px">
+      </app-stats>
+    </div>
+  </div>
+</div><br>
+
+
+<h2 style="margin-left:20px;">WATCHES</h2><br><br>
+
+<div class="row">
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'1000'" [code]="'Watch001'" [image]="'assets/img8.jpg'" [color]="'Gold'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'490'" [code]="'Watch002'" [image]="'assets/img2.jpg'" [color]="'Blue'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'800'" [code]="'Watch003'" [image]="'assets/img3.jpg'" [color]="'Pink'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'780'" [code]="'Watch004'" [image]="'assets/img4.jpg'" [color]="'Silver'">
+      </app-productsdesc>
+    </div>
+  </div>
+</div><br>
+<div class="row">
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'200'" [code]="'Watch005'" [image]="'assets/img5.jpg'" [color]="'Rosegold'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'500'" [code]="'Watch006'" [image]="'assets/img9.jpg'" [color]="'Blue'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'630'" [code]="'Watch007'" [image]="'assets/img7.jpg'" [color]="'Blue'">
+      </app-productsdesc>
+    </div>
+  </div>
+</div><br>
+
+<h2 style="margin-left:20px;">COMBO WATCHES</h2><br><br>
+
+<div class="row">
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'1500'" [code]="'Combo001'" [image]="'assets/box1.jpg'" [color]="'Pink and Blue'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'1800'" [code]="'Combo002'" [image]="'assets/box2.jpg'" [color]="'white and Black'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'500'" [code]="'Combo003'" [image]="'assets/box3.jpg'" [color]="'Orange and Black'">
+      </app-productsdesc>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="shadow bg-white rounded">
+      <app-productsdesc [price]="'900'" [code]="'Combo004'" [image]="'assets/box4.jpg'" [color]="' Blue'">
+      </app-productsdesc>
+    </div>
+  </div>
+</div><br>
+
+
+
+<div class="row">
+  <div class="col-12" style="margin-top: 50px">
+    <app-usertable [data]="products" [tableHeaders]="tableHeaders"></app-usertable>
+  </div>
+</div>

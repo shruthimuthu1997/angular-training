@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped">
+
+        <thead>
+          <tr>
+            <th scope="col" *ngFor="let header of tableHeaders">{{header}}</th>
+            <!-- <th scope="col">S.no</th>
+          <th scope="col">first</th>
+          <th scope="col">Last</th>
+          <th scope="col">Email</th>
+          <th scope="col">phone</th>
+          <th scope="col">Designation</th> -->
+
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let user of data;let i=index;">
+            <td>{{i+1}}
+            <td *ngFor="let key of getKeys()">
+              {{user[key]}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="isDefined()">
+  <div class="alert alert-success" *ngIf="isValid()" role="alert">
+    {{message}}
+  </div>
+
+  <div class="alert alert-danger" *ngIf="!isValid()" role="alert">
+    {{message}}
+  </div>
+</div>

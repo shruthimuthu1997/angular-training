@@ -1,0 +1,81 @@
+<div class="card" style="margin-right: 390px;margin-left: 390px;margin-top: 90px">
+  <div class="form-group">
+    <div class="card-header">FORM</div>
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" formControlName="name" class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+          <div *ngIf="f.name.errors.required">Name is required</div>
+          <div *ngIf="f.name.errors.minlength"> Minimum length is 2</div>
+          <div *ngIf="f.name.errors.maxlength"> Maximum length is 20</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Price</label>
+        <input type="number" formControlName="name" class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.price.errors }" />
+        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+          <div *ngIf="f.price.errors.required">Price is required</div>
+          <div *ngIf="f.price.errors.minlength"> Minimum price is 500</div>
+          <div *ngIf="f.price.errors.maxlength"> Maximum price is 10000</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Code</label>
+        <input type="number" formControlName="name" class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.code.errors }" />
+        <div *ngIf="submitted && f.code.errors" class="invalid-feedback">
+          <div *ngIf="f.code.errors.required">Code is required</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Category</label>
+        <select class="form-control" formControlName="category">
+          <option *ngFor="let items of  category">{{items}}</option>
+        </select>
+        <div *ngIf="Submitted && f.category.errors" class="invalid-feedback">
+          <div *ngIf="f.category.errors.required">Category is required</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Sub Category</label>
+        <select class="form-control" formControlName="subCategory">
+          <option *ngFor="let list of  subCategory[getSelectedCategory()]">{{list}}</option>
+        </select>
+        <div *ngIf="Submitted && f.subCategory.errors" class="invalid-feedback">
+          <div *ngIf="f.subCategory.errors.required">Subcategory is required</div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+        </div>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        </div>
+      </div>
+
+      <div>
+        <label>GiftWrap</label>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+          <label class="custom-control-label" for="defaultChecked">Yes</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+          <label class="custom-control-label" for="defaultUnchecked">No</label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

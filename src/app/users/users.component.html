@@ -1,0 +1,36 @@
+<div class="card-header" style="align-items:center"><b>USERS</b></div>
+
+<div class="row" style="background-color:blueviolet; padding:20px ;margin-left:0px">
+  <div class="col-4">
+    <app-stats [count]="users.length" [title]="'TOTAL'" [iconClass]="'fa fa-users'" [color]="'purple'">
+    </app-stats>
+  </div>
+
+  <div class="col-4">
+    <app-stats [count]="getActiveCount()" [title]="'ACTIVE'" [iconClass]="'fa fa-user'" [color]="'green'">
+    </app-stats>
+  </div>
+
+  <div class="col-4">
+    <app-stats [count]="getInactiveCount()" [title]="'INACTIVE'" [iconClass]="'fa fa-user-times'" [color]="'blue'">
+    </app-stats>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-12" style="margin-top: 50px">
+    <app-usertable [data]="users" [tableHeaders]="tableHeaders"></app-usertable>
+
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-12" style="margin-top: 50px">
+    <app-usertable [data]="users" [tableHeaders]="tableHeaders"></app-usertable>
+  </div>
+</div> -->
+
+<!-- <button class="btn btn-primary" (click)="navigateToUser(12)">user</button>  -->

@@ -1,0 +1,91 @@
+<app-header [title]="dashboard" style=" margin-left: 0px"></app-header>
+<div class="row " style="background-color: blueviolet; margin-left: 0px;">
+
+  <div class=" col-3">
+    <app-stats [count]="10" [title]="'users'" [iconClass]="'fa fa-users'" [color]="'blue'" style="margin-left: 20px">
+    </app-stats>
+  </div>
+
+  <div class="col-3">
+    <app-stats [count]="20" [title]="'Orders'" [iconClass]="'fa fa-cart-plus'" [color]="'red'"
+      style="margin-left: 20px "></app-stats>
+  </div>
+
+  <div class="col-3">
+    <app-stats [count]="30" [title]="'Request'" [iconClass]="'fa fa-volume-control-phone'" [color]="'cyan'"
+      style="margin-left: 20px ">
+    </app-stats>
+  </div>
+
+  <div class="col-3">
+    <app-stats [count]="40" [title]="'Delivered'" [iconClass]="'fa fa-truck'" [color]="'pink'"
+      style="margin-left: 20px"></app-stats>
+  </div>
+</div>
+
+
+
+<!-- <div class="row " style="margin-top: 50px ; margin-left: 50px  ">
+  <div class="col-4">
+    <div>
+      <app-validation [price]="'25,000'" [heading]="'DELIVERING'" style="color:green ;margin-top: 20px ">
+
+      </app-validation>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div>
+      <app-validation [price]="'25,000'" [heading]="'DELIVERING'"
+        style="color:green ;margin-top: 20px ; margin-left: 10px">
+
+      </app-validation>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div>
+      <app-validation [price]="'25,000'" [heading]="'DELIVERING'" style="color:green ;margin-top: 20px ">
+
+      </app-validation>
+    </div>
+  </div>
+</div>
+
+ -->
+
+<div class="row " style="margin-top: 50px ; margin-right: 120px  ">
+  <div class="offset-3">
+    <div class="shadow bg-white rounded">
+      <app-validation [price]="'25,000'" [heading]="'DELIVERING'" style="color:green ;margin-top: 20px ">
+
+      </app-validation>
+    </div>
+  </div>
+  <div class="shadow bg-white rounded">
+    <div>
+      <app-validation [price]="'50,00.00'" [heading]="'MARKETING'" style="color: red ;margin-top: 20px">
+      </app-validation>
+    </div>
+  </div>
+  <div class="shadow bg-white rounded">
+    <div>
+      <app-validation [price]="'1,0000.00'" [heading]="'LOGESTICS'" style="color:blue ;margin-top: 20px">
+      </app-validation>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="row">
+  <div class="col-12" style="margin-top: 50px">
+    <app-usertable [data]="users" [tableHeaders]="tableHeaders"></app-usertable>
+  </div>
+</div>
+
+
+
+<!-- <button class="btn btn-primary" (click)="navigateToUser(12)">user</button> -->

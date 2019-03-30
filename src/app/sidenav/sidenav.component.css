@@ -1,0 +1,11 @@
+.parent
+{
+    background-color:#f8bbd0 ;
+    height: 300vh;
+    padding: 40px;
+    width:230px;
+    
+}
+a:hover {
+    background-color: white;
+  }
