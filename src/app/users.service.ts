@@ -11,4 +11,8 @@ export class UsersService {
   getUsers() {
     return this.http.get("http://localhost:3000/users").toPromise()
   }
+  insertUsers(users) {
+    return this.http.post("http://localhost:3000/users", users).toPromise()
+  }
 }
+

@@ -14,6 +14,7 @@ export class UsersComponent implements OnInit {
   tableHeaders = ["s.no", "name", "price", "manufacture", "owner"]
 
 
+
   // users = [{
   //   firstName: 'mohana priya',
   //   lastName: 'manogar',
@@ -119,7 +120,7 @@ export class UsersComponent implements OnInit {
   async ngOnInit() {
 
     const users = await this.usersService.getUsers()
-    this.users = users['sruthi']
+    this.users = users['users']
     console.log("hello");
   }
 

@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./usertable.component.css']
 })
 export class UsertableComponent implements OnInit {
-  @Input() data = []
+  @Input() data = [];
+
 
   @Input() tableHeaders = [];
   constructor() { }
@@ -17,5 +18,4 @@ export class UsertableComponent implements OnInit {
     let firstData = this.data[0];
     return Object.keys(firstData);
   }
-
 }

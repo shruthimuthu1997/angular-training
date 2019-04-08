@@ -15,7 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { UsersComponent } from './users/users.component';
 import { ProductsComponent } from './products/products.component';
 import { LogicComponent } from './logic/logic.component';
-import { UsersViewComponent } from './users-view/users-view.component';
+import { UserviewComponent } from './users-view/users-view.component';
 import { FormsComponent } from './forms/forms.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductsdescComponent } from './productsdesc/productsdesc.component';
@@ -24,6 +24,7 @@ import { AlertComponent } from './alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductServiceService } from './product-service.service';
 import { UsersService } from './users.service';
+import { TablewithactionsComponent } from './tablewithactions/tablewithactions.component';
 
 
 
@@ -39,12 +40,13 @@ import { UsersService } from './users.service';
     UsersComponent,
     ProductsComponent,
     LogicComponent,
-    UsersViewComponent,
+    UserviewComponent,
     FormsComponent,
     ShopComponent,
     ProductsdescComponent,
     SidenavComponent,
-    AlertComponent
+    AlertComponent,
+    TablewithactionsComponent
   ],
   imports: [
     BrowserModule,

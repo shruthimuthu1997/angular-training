@@ -18,7 +18,7 @@ export class ProductsComponent implements OnInit {
   async ngOnInit() {
 
     const products = await this.productService.getProducts()
-    this.products = products['product']
+    this.products = products['products']
     console.log("hello");
   }
 
@@ -28,4 +28,8 @@ export class ProductsComponent implements OnInit {
     this.router.navigate(["products/shop"]) // this products/add should be same as path in module.ts
   }
 
+
+  edit(id) {
+    console.log(`printing the content ${id}`)
+  }
 }

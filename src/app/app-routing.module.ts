@@ -6,10 +6,11 @@ import { LogicComponent } from './logic/logic.component';
 import { AlertComponent } from './alert/alert.component';
 import { UsersComponent } from './users/users.component';
 import { ProductsComponent } from './products/products.component';
-import { UsersViewComponent } from './users-view/users-view.component';
+import { UserviewComponent } from './users-view/users-view.component';
 import { FormsComponent } from './forms/forms.component';
 import { ShopComponent } from './shop/shop.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+
 const routes: Routes = [
   {
     path: 'login',
@@ -37,11 +38,11 @@ const routes: Routes = [
   },
   {
     path: 'users/:id',
-    component: UsersViewComponent
+    component: UserviewComponent
   },
   {
-    path: 'usersview',
-    component: UsersViewComponent
+    path: 'userview',
+    component: UserviewComponent
   },
   {
     path: 'forms',
